@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Сергеевич](https://up.htmlacademy.ru/htmlcss/27/user/1225721).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic)
 
 ---
 

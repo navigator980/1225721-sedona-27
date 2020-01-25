@@ -35,28 +35,52 @@
       </section>
       <section>
         <form>
-        <h3>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
-        <p>ДАТА ЗАЕЗДА:</p>
-        <time datetime="24-04-2017">24 апреля 2017</time>
-        <p>ДАТА ВЫЕЗДА:</p>
-        <time datetime="04-04-2017">4 июля 2017</time>
-        <p>ВЗРОСЛЫЕ:</p>
-        <p>2</p>
-        <p>ДЕТИ</p>
-        <p>0</p><br>
+        <button id="search" class="#" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+
+        <div>
+        <label for="entry-date">ДАТА ЗАЕЗДА:</label>
+        <input id="entry-date" type="text" name="entry-date" placeholder="24 апреля 2017" required>        
+        </div>       
+
+        <div>
+        <label for="exit-date">ДАТА ВЫЕЗДА:</label>
+        <input id="exit-date" type="text" name="exit-date" placeholder="4 июля 2017" required>
+        </div>
+
+        <div class="counter">
+        <label for="adult">ВЗРОСЛЫЕ:</label>
+        <div class="adult">
+        <button class="button-minus" type="button">-</button>
+        <input id="adult" type="text" name="adult" value="2" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+        <button class="button-plus" type="button">+</button>
+        </div>           
+        </div>
+
+        <div class="counter">
+        <label for="kids">ДЕТИ:</label>
+        <div class="kids">
+          <button class="button-minus" type="button">-</button>
+          <input id="kids" type="text" name="kids" value="0" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+          <button class="button-plus" type="button">+</button>
+        </div>
+        </div>
+
         <button type="submit">НАЙТИ</button>
         </form>
+        <section>
+          <div id="map" class="map">
+
+          </div>
+        </section>
       </section>
     </main>
-    <footer>
-      <div>
-      <p>#VISITSEDONA</p>
+    <footer>      
+      <b>#VISITSEDONA</b>
       <ul>
         <li><a href="#">Twitter</a></li>
         <li><a href="#">Facebook</a></li>
         <li><a href="#">YouTube</a></li>
-      </ul>
-      </div>
+      </ul>      
       <p>Website by HTML Academy</p>
     </footer>
   </body>

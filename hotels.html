@@ -19,6 +19,82 @@
       </nav>
     </header>
     <main>
+
+<!--Общий класс фильтрам filters где будут вложены все остальные фильтры в блоке-->
+<section class="filters">
+  <form class="filter">
+    <div class="infrastructure-filter">
+      <h3>ИНФРАСТРУКТУРА:</h3>
+      <input id="pool" type="checkbox" name="pool" checked>
+      <label for="pool">
+        БАССЕЙН
+      </label><br>
+      <input id="parking" type="checkbox" name="parking" >
+      <label for="parking">
+        ПАРКОВКА
+      </label><br>
+      <input id="wi-fi" type="checkbox" name="pool">
+      <label for="wi-fi" type="checkbox" name="pool">
+        WI-FI
+      </label>
+    </div>
+
+<!-- Задал название классна Property-filter для фильтра для колонки типа жилья-->
+    <div class="property-filter">
+      <h3>ТИП ЖИЛЬЯ:</h3>
+      <input id="hotel" type="checkbox" name="hotel" checked>
+      <label for="hoter">
+        ГОСТИННИЦА
+      </label><br>
+      <input id="motel" type="checkbox" name="motel" checked>
+      <label for="motel">
+        МОТЕЛЬ
+      </label><br>
+      <input id="apartment" type="checkbox" name="apartment" checked>
+      <label>
+        АПАРТАМЕНТЫ
+      </label>
+    </div>
+
+<!-- Задаю будущий класс фильтру по цене price-filter-->
+    <div class="price-filter">
+      <h3>
+        СТОИМОСТЬ В СУТКИ (Р):
+      </h3>
+      <div class="total-amount">
+        <label class="minimal-price" value="0">
+          ОТ
+        </label>
+        <label class="maximum-price" value="3000">
+          ДО 5000
+        </label>
+      </div>
+
+<!-- Задаю класс ползунку (range), дальше когда буду дорабатывать фильтр ( попробую по крайней мере ) ,
+   я пооробую сделать так, чтобы всё двигалось как надо и был показан весь допустимый диапозон-->
+      <div class="range">
+        <div xlass="bar"></div>
+        <span class="minimal-range"></span>
+        <span class="maximum-range"></span>
+      </div>
+      <input type="submit" value="ПОКАЗАТЬ">
+    </div>
+  </form>
+</section>
+
+<!-- добавляю доп секцию под результаты results-->
+<section class="results">
+  <span class="result-gradation">
+    НАЙДЕНО: 3
+  </span>
+  <div class="gradation">
+    <span>СОРТИРОВКА</span>
+    <a class="price-gradation" href="#">ПО ЦЕНЕ</a>
+    <a class="type-gradation" href="#">ПО ТИПУ</a>"
+    <a class="rating-gradation" href="#">ПО РЕЙТИНГУ</a>
+  </div>
+</section>
+
         <section>
         <a><strong>AMARA RESORT & SPA</strong></a>
         <img src="img/amara_resot_and_spa.svg" width="150" height="200" alt="Фото отеля">

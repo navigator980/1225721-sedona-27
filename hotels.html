@@ -24,52 +24,52 @@
 <section class="filters">
   <form class="filter">
     <div class="infrastructure-filter">
-      <h3>ИНФРАСТРУКТУРА:</h3>
+      <h3>Инфраструктура:</h3>
       
       <input id="pool" type="checkbox" name="pool" checked>
       <label for="pool">
-        БАССЕЙН
+        Бассейн
       </label><br>
       <input id="parking" type="checkbox" name="parking">
       <label for="parking">
-        ПАРКОВКА
+        Парковка
       </label><br>
       <input id="wi-fi" type="checkbox" name="wi-fi">
       <label for="wi-fi">
-        WI-FI
+        Wi-fi
       </label>
     </div>
 
 <!-- Задал название классна Property-filter для фильтра для колонки типа жилья-->
     <div class="property-filter">
-      <h3>ТИП ЖИЛЬЯ:</h3>
+      <h3>Тип жилья:</h3>
       <input id="hotel" type="checkbox" name="hotel" checked>
       <label for="hotel">
-        ГОСТИННИЦА
+        Гостинница
       </label><br>
       <input id="motel" type="checkbox" name="motel" checked>
       <label for="motel">
-        МОТЕЛЬ
+        Мотель
       </label><br>
       <input id="apartment" type="checkbox" name="apartment" checked>
       <label  for="apartment">
-        АПАРТАМЕНТЫ
+        Апартаменты
       </label>
     </div>
 
 <!-- Задаю будущий класс фильтру по цене price-filter-->
     <div class="price-filter">
       <h3>
-        СТОИМОСТЬ В СУТКИ (Р):
+        Стоимость в сутки (р):
       </h3>
       <div class="price-range">
         <label class="min-price">
-         ОТ  
+         От  
         <input type="text" name="min-price" value="0">
         </label>
 
         <label class="max-price">
-         ДО
+         До
         <input type="text" name="max-price" value="ДО 3000">
         </label>
        </div>
@@ -89,68 +89,95 @@
 <!-- добавляю доп секцию под результаты results-->
 <section class="results">
   <div class="result-gradation">
-    <h3>НАЙДЕНО: 3</h3>
+    <h3>Найдено: 3</h3>
   </div>
   <div class="gradation">
-    <span>СОРТИРОВКА:</span>
-    <a class="price-gradation" href="#">ПО ЦЕНЕ</a>
-    <a class="type-gradation" href="#">ПО ТИПУ</a>
-    <a class="rating-gradation" href="#">ПО РЕЙТИНГУ</a>
+    <span>Сортировка:</span>
+    <a class="price-gradation" href="#">По цене</a>
+    <a class="type-gradation" href="#">По типу</a>
+    <a class="rating-gradation" href="#">По рейтингу</a>
   </div>
 </section>
 
         <section class="results">
           <article>
-        <h3><b>AMARA RESORT & SPA</b></h3>
+        <h3><b>Amara Resort & Spa</b></h3>
         <img src="img/amara_resot_and_spa.svg" width="150" height="200" alt="Фото отеля">
         <p>
-            <a href="#">ПОДРОБНЕЕ</a>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
-            <span>ГОСТИННИЦА</span>
-            <span>ОТ 4000 Р.</span>
+            <a href="#">Подробнее</a>
+            <a href="#">Забронировать</a>
+            <span>Гостинница</span>
+            <span>От 4000 р.</span>
         </p>
-        <a><img src="img/four-stars.svg" alt="4 звезды"></a><br>
-        <a>РЕЙТИНГ: 8,5</a>            
+        <span>
+        <img src="img/star.svg" alt="4 звезды">
+        <img src="img/star.svg" alt="4 звезды">
+        <img src="img/star.svg" alt="4 звезды">
+        <img src="img/star.svg" alt="4 звезды">
+        </span>
+        <p>Рейтинг: 8,5</p>  
+
           </article>
 
             <article>
-            <h3><b>DESERT QUAIL INN</b></h3>
+            <h3><b>Desert Quail Inn</b></h3>
             <img src="img/desert_quail_inn.svg" width="150" height="200" alt="Фото мотеля">
             <p>
-                <a href="#">ПОДРОБНЕЕ</a>
-                <a href="#">ЗАБРОНИРОВАТЬ</a>
-                <span>МОТЕЛЬ</span> 
-                <span>ОТ 3000 Р.</span>
+                <a href="#">Подробнее</a>
+                <a href="#">Забронировать</a>
+                <span>Мотель</span> 
+                <span>От 3000 р.</span>
             </p>
-            <a><img src="img/three-stars.svg" alt="3 здвезды"></a><br>
-            <a>РЕЙТИНГ: 8,9</a>
+            <span>
+              <img src="img/star.svg" alt="3 звезды">
+              <img src="img/star.svg" alt="3 звезды">
+              <img src="img/star.svg" alt="3 звезды">
+            </span>
+            <p>Рейтинг: 8,9</p> 
+
             </article>
 
             <article>
-                <h3><b>VILLAS AT POCO DIABLO</b></h3>
+                <h3><b>Villas At Poco Diablo</b></h3>
                 <img src="img/villas_at_poco_diablo.svg" width="150" height="200" alt="Фото апартаментов">
                 <p>
-                    <a href="#">ПОДРОБНЕЕ</a>
-                    <a href="#">ЗАБРОНИРОВАТЬ</a>
-                    <span>АПАРТАМЕНТЫ</span> 
-                    <span>ОТ 2000 Р.</span>
+                    <a href="#">Подробнее</a>
+                    <a href="#">Забронировать</a>
+                    <span>Апартаменты</span> 
+                    <span>От 2000 р.</span>
                 </p>
-                <a><img src="img/two-stars.svg" alt="2 здвезды"></a><br>
-                <a>РЕЙТИНГ: 9,2</a>              
+                <span>
+                  <img src="img/star.svg" alt="2 звезды">
+                  <img src="img/star.svg" alt="2 звезды">
+                </span>
+                <p>Рейтинг: 9,2</p>                   
+            
             </article>
             
           </section>
     </main>
-    <footer>
-        <div>
-        <p>#VISITSEDONA</p>
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
-        </div>
-        <p>Website by HTML Academy</p>
-      </footer>
+    <footer>      
+      <b>#visitsedona</b>
+      <span>
+
+        <a href="https://twitter.com/">
+        <img src="img/twitter.svg" width="50" height="100" alt="Twitter">
+        </a>
+
+          <a href="https://facebook.com/">
+          <img src="img/fb-icon.svg" width="50" height="100" alt="Facebook">
+          </a>
+
+          <a href="https://youtube.com/">
+          <img src="img/youtube.svg" width="50" height="100" alt="YouTube">
+            </a>
+
+      </span>
+      <p>website by</p>
+      <a class="copyright" href="https://htmlacademy.ru/">
+      <img src="img/logo-htmlacademy.svg" width="100" height="50"></img>        
+      </a>
+
+    </footer>
     </body>
   </html>

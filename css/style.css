@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+  }
+
+a {
+    text-decoration: none;
+}
+
+/* Бекграунд картинка. Есть ли смысл добавлять её в CSS если она прописана в index.html ?
+.main {
+    backgroound-image: url("img/background-photo.png");
+*/
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+
+    background-color: white;
+}
+
+.main-navigation,
+.site-navigation {
+    list-style: none;
+}
+
+.main h1 {
+    font-size: 21px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.site-navigation a {
+    color: black;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    background-color: #81b3d2;
+}
+
+.features-list ul {
+    list-style:none;
+}
+
+.features-item h3 {
+    font-size: 21px;
+    line-height: 21px; 
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.features-item {
+    text-align: center;
+}
+
+.search-button,
+.search {
+    text-align: center;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.slogan {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+ 
+.social-button {
+    list-style: none;
+    text-align: center;
+    font-weight: 23px;
+    line-height: 24px;
+    background-color: #81b3d2;
+}

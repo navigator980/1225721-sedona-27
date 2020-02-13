@@ -7,6 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Навигация сайта -->
     <header>
       <nav class="main-navigation">
         <a href="index.html">
@@ -20,13 +21,14 @@
         </ul>
       </nav>  
     </header>
+    <!-- Основная информация -->
     <main>
       <img src="img/background-photo.png" width="1200" height="800" alt="Задний фон">
       <img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">    
       <h1>Седона- небольшой городок в аризоне, заслуживающий большего!</h1>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
         <section class="features-list">
-          <div>
+          <div class="features-item-text">
           <h3>Настоящий городок</h3>
           <span>- № 1 -</span>  
           <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>                     
@@ -53,7 +55,7 @@
           </ul>        
         </section>
         <section class="features-list">
-          <div>
+          <div class="features-item-text">
           <h3>Там есть мост дьявола</h3>
           <span>- № 2 -</span>
           <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>            
@@ -81,10 +83,10 @@
         </section>
       <!-- Секция формы -->
       <button id="search" class="search-button" type="button">Поиск гостиницы в Седоне</button>        
-      <section>
+      <section class="search-block">
         <form action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="search">Зинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>              
+        <h2 class="search-text-main">Заинтересовались?</h2>
+        <p class="search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>              
         <div>
           <label for="entry-date">Дата заезда:</label>
           <input id="entry-date" type="text" name="entry-date" placeholder="24 апреля 2017" required>  
@@ -111,7 +113,7 @@
           <button class="button-plus" type="button">+</button>
         </div>
         </div>
-          <button type="submit"><b>Найти</b></button>
+          <button class="submit-search" type="submit">Найти</button>
         </form>
           <div id="map" class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52388.716842047914!2d-111.
@@ -123,28 +125,28 @@
     </main>
     <footer>      
       <span class="slogan">#visitsedona</span>
-      <ul class="social-button">
+      <ul class="social-buttons">
         <li>
           <a class="social-button-tw" href="https://twitter.com/">
-            <img src="img/twitter.svg" width="50" height="100" alt="Twitter"> 
+          <img src="img/twitter.svg" width="50" height="100" alt="Twitter"> 
           </a>         
         </li>
         <li>
           <a class="social-button-fb" href="https://facebook.com/">
-            <img src="img/fb-icon.svg" width="50" height="100" alt="Facebook"> 
+          <img src="img/fb-icon.svg" width="50" height="100" alt="Facebook"> 
           </a>        
         </li>
         <li>
           <a class="social-button-yt" href="https://youtube.com/">
-            <img src="img/youtube.svg" width="50" height="100" alt="YouTube">
+          <img src="img/youtube.svg" width="50" height="100" alt="YouTube">
           </a>        
         </li>
       </ul>
-        <p>website by
+      <p>website by
       <a class="copyright" href="https://htmlacademy.ru/">
-        <img src="img/logo-htmlacademy.svg" width="100" height="50" alt="Логотип htmlacademy">  
+      <img src="img/logo-htmlacademy.svg" width="100" height="50" alt="Логотип htmlacademy">  
       </a>  
-        </p>
+      </p>
     </footer>
   </body>
 </html>

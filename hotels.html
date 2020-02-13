@@ -7,20 +7,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Навигация сайта -->
     <header>
-      <nav>
-        <a>
-          <img src="img/logo-sedona.svg" width="135" height="70" alt="Логотип Sedona">
+      <nav class="main-navigation">
+        <a href="index.html">
+          <img src="img/logo-sedona.svg" width="135" height="70" alt="Логотип Sedona">          
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="index.html">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
           <li><a href="#">Карта Штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
-      </nav>
+      </nav>  
     </header>
-    <main>
 <!--Общий класс фильтрам filters где будут вложены все остальные фильтры в блоке-->
 <section class="filters">
   <form class="filter" action="https://echo.htmlacademy.ru" method="post">
@@ -98,8 +98,8 @@
         <h3>Amara Resort & Spa</h3>
         <img src="img/amara_resot_and_spa.png" width="135" height="90" alt="Фото отеля">
         <p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="learn-more" href="#">Подробнее</a>
+            <a class="reserved" href="#">Забронировать</a>
             <span>Гостинница</span>
             <span>От 4000 р.</span>
         </p>
@@ -115,8 +115,8 @@
             <h3>Desert Quail Inn</h3>
             <img src="img/desert_quail_inn.png" width="135" height="90" alt="Фото мотеля">
             <p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="learn-more" href="#">Подробнее</a>
+                <a class="reserved" href="#">Забронировать</a>
                 <span>Мотель</span> 
                 <span>От 3000 р.</span>
             </p>
@@ -131,8 +131,8 @@
                 <h3>Villas At Poco Diablo</h3>
                 <img src="img/villas_at_poco_diablo.png" width="135" height="90" alt="Фото апартаментов">
                 <p>
-                    <a href="#">Подробнее</a>
-                    <a href="#">Забронировать</a>
+                    <a class="learn-more" href="#">Подробнее</a>
+                    <a class="reserved" href="#">Забронировать</a>
                     <span>Апартаменты</span> 
                     <span>От 2000 р.</span>
                 </p>
@@ -146,7 +146,7 @@
     </main>
     <footer>      
       <span class="slogan">#visitsedona</span>
-      <ul class="social-button">
+      <ul class="social-buttons">
         <li>
           <a class="social-button-tw" href="https://twitter.com/">
             <img src="img/twitter.svg" width="50" height="100" alt="Twitter"> 

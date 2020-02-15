@@ -48,10 +48,19 @@ a {
     color: black;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-    background-color: #81b3d2;
+
+.site-navigation a:hover {
+    color: #81b3d2;
 }
+
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:active {
+    color: #766357;
+}
+
 /* Список преимуществ */
 .features-list ul {
     list-style:none;
@@ -123,7 +132,6 @@ a {
     list-style:none;
     background-color: #81b3d2;
 }
-
 
 /* Страница с отелями */
 

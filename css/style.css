@@ -44,23 +44,22 @@ a {
     line-height: 26px;
 }
 
+/* Навигация сайта */
 .site-navigation a {
     color: black;
 }
-
 
 .site-navigation a:hover {
     color: #81b3d2;
 }
 
 .site-navigation a:focus {
-    color: rgba(0, 0, 0, 0.3);
+    color: brown;
 }
 
 .site-navigation a:active {
-    color: #766357;
+    color: grey;
 }
-
 /* Список преимуществ */
 .features-list ul {
     list-style:none;
@@ -97,7 +96,18 @@ a {
     font-weight: 700;
     line-height: 26px;
     background-color: #766357;
+    width: 568px;
+    height: 86px;
+    border: none;
     
+}
+
+.search-button:hover {
+    background-color: #604e43;
+}
+
+.search-button:active {
+    background-color: #503e33;
 }
 
 .search-text-main, h2 {
@@ -120,7 +130,59 @@ a {
     font-weight: 700;
     line-height: 26px;
     background-color: #81b3d2;
+    border: none;
+    margin-top: 55px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 458px;
+    height: 58px;
 }
+
+.submit-search:hover {
+    background-color: #669ec0;
+}
+
+.submit-search:active {
+    background-color: #5496bd;
+}
+/* Кнопки плюсов и минусов в секции формы  */
+.button-minus:hover {
+    color: black;
+}
+
+.button-minus:active {
+    color: #81b3d2;
+}
+
+.button-plus:hover {
+    color: black;
+}
+
+.button-plus:active {
+    color: #81b3d2;
+}
+
+
+/* Кнопки календаря */
+
+.calendar-button {
+    width: 21px;
+    height: 22px;
+}
+
+.calendar-button:hover {
+    background: url(../img/calendar-hover.svg) transparent no-repeat;
+    color: black;
+}
+
+.calendar-button:active {
+    background-image: url(../img/calendar-active.svg) transparent no-repeat;
+    color: #81b3d2;
+}
+
 /* Футер */
 .slogan {
     font-size: 21px;
@@ -128,9 +190,20 @@ a {
     line-height: 26px;
 }
 
+.copyright-logo:hover {
+    color: #81b3d2;
+}
+
+/* Сошал кнопки  */
+
 .social-buttons {
     list-style:none;
-    background-color: #81b3d2;
+}
+
+/* Активная кнопка на странице отеля */
+
+.site-navigation .active-page:active {
+    color: #766357 ;
 }
 
 /* Страница с отелями */
@@ -177,3 +250,11 @@ a {
     background-color: #766357;
 }
 
+.rating {
+    background-color:#f2f2f2;
+    color:#666;
+    padding-top: 3px;
+    padding-right: 13px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+}

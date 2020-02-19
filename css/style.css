@@ -46,24 +46,21 @@ a {
 
 /* Навигация сайта */
 .site-navigation a {
-    color: black;
+    color: #000000;
 }
 
 .site-navigation a:hover {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
-    color: brown;
-}
-
 .site-navigation a:active {
-    color: grey;
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.info-navigation {
+.active-page-info:visited {
     color: #766357;
 }
+
 /* Список преимуществ */
 .features-list ul {
     list-style:none;
@@ -297,6 +294,12 @@ a {
 }
 
 /* Страница с отелями */
+
+/* Стиль активной страницы на которой находимся */
+
+.active-page-hotel:visited {
+    color: #766357;
+}
 
 .results a {
     text-decoration: none;

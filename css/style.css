@@ -60,6 +60,10 @@ a {
 .site-navigation a:active {
     color: grey;
 }
+
+.info-navigation {
+    color: #766357;
+}
 /* Список преимуществ */
 .features-list ul {
     list-style:none;
@@ -148,39 +152,67 @@ a {
 .submit-search:active {
     background-color: #5496bd;
 }
+
+/* Стилизация формы заезда выезда */
+.style-date {
+    background-color: #f2f2f2;
+}
+
+.style-date:hover {
+    background-color: #ebebeb;
+}
+
+.style-date:focus {
+    background-color: #ffffff;
+}
 /* Кнопки плюсов и минусов в секции формы  */
+
+.button-minus {
+    background: url(../img/minus-button.svg) transparent no-repeat;
+    width: 5px;
+    height: 13px;
+    border: none;
+}
+
 .button-minus:hover {
-    color: black;
+    background: url(../img/minus-button-hover.svg) transparent no-repeat;
 }
 
 .button-minus:active {
-    color: #81b3d2;
+    background: url(../img/minus-button-active.svg) transparent no-repeat;
+}
+
+.button-plus {
+    background: url(../img/plus-button.svg) transparent no-repeat;
+    width: 5px;
+    height: 22px;
+    border: none;
 }
 
 .button-plus:hover {
-    color: black;
+    background: url(../img/plus-button-hover.svg) transparent no-repeat;
 }
 
 .button-plus:active {
-    color: #81b3d2;
+    background: url(../img/plus-button-active.svg) transparent no-repeat;
 }
-
 
 /* Кнопки календаря */
 
 .calendar-button {
     width: 21px;
     height: 22px;
+    background: url(../img/calendar.svg) transparent no-repeat;
+    position: absolute;
+    border: none;
 }
 
 .calendar-button:hover {
     background: url(../img/calendar-hover.svg) transparent no-repeat;
-    color: black;
 }
 
-.calendar-button:active {
-    background-image: url(../img/calendar-active.svg) transparent no-repeat;
-    color: #81b3d2;
+.calendar-button:active { 
+    background: url(../img/calendar-active.svg) transparent no-repeat;
 }
 
 /* Футер */
@@ -190,8 +222,21 @@ a {
     line-height: 26px;
 }
 
+/* Кнопка логотипа */
+
+.copyright-logo {
+    width: 115px;
+    height: 41px;
+    background: url(../img/logo-htmlacademy.svg) transparent no-repeat;
+    border: none;
+}
+
 .copyright-logo:hover {
-    color: #81b3d2;
+    background: url(../img/logo-htmlacademy-hover.svg) transparent no-repeat;
+}
+
+.copyright-logo:active {
+    background: url(../img/logo-htmlacademy-active.svg) transparent no-repeat;
 }
 
 /* Сошал кнопки  */
@@ -200,9 +245,54 @@ a {
     list-style:none;
 }
 
+.button-tw {
+    background: url(../img/button-tw.svg) transparent no-repeat;
+    border: none;
+    width: 46px;
+    height: 48px;
+}
+
+.button-tw:hover {
+    background: url(../img/button-tw-hover.svg) transparent no-repeat;
+}
+
+.button-tw:active {
+    background: url(../img/button-tw-active.svg) transparent no-repeat;
+}
+
+.button-fb {
+    background: url(../img/button-fb.svg) transparent no-repeat;
+    border: none;
+    width: 46px;
+    height: 48px;
+}
+
+.button-fb:hover {
+    background: url(../img/button-fb-hover.svg) transparent no-repeat;
+}
+
+.button-fb:active {
+    background: url(../img/button-fb-active.svg) transparent no-repeat;
+}
+
+.button-yt {
+    background: url(../img/button-yt.svg) transparent no-repeat;
+    border: none;
+    width: 46px;
+    height: 48px;
+}
+
+.button-yt:hover {
+    background: url(../img/button-yt-hover.svg) transparent no-repeat;
+}
+
+.button-yt:active {
+    background: url(../img/button-yt-active.svg) transparent no-repeat;
+}
+
 /* Активная кнопка на странице отеля */
 
-.site-navigation .active-page:active {
+.site-navigation .active-page-hotel:active {
     color: #766357 ;
 }
 
@@ -240,6 +330,15 @@ a {
     background-color: #81b3d2;
 }
 
+.learn-more:hover {
+    background-color: #669ec0;
+}
+
+.learn-more:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .reserved {
     width: 110px;
     height: 11px;
@@ -250,6 +349,15 @@ a {
     background-color: #766357;
 }
 
+.reserved:hover {
+    background-color: #604e43;
+}
+
+.reserved:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .rating {
     background-color:#f2f2f2;
     color:#666;
@@ -257,4 +365,95 @@ a {
     padding-right: 13px;
     padding-bottom: 3px;
     padding-left: 13px;
+}
+
+/* Стилизация фильтров ( Найдено ) */
+/*
+<a class="price-gradation" href="#">По цене</a>
+<a class="type-gradation" href="#">По типу</a>
+<a class="rating-gradation" href="#">По рейтингу</a>
+*/
+
+.gradation {
+    font-size: 12px;
+
+}
+
+.price-gradation {
+    color: #81b3d2;
+    border-bottom: 1px dotted #d2d2d2;
+    border-bottom-color:rgb(210, 210, 210);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    margin-left: 38px;
+    margin-right: 38px;
+}
+
+.type-gradation,
+.rating-gradation {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #d2d2d2;
+    border-bottom-color:rgb(210, 210, 210);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    margin-right: 38px;
+}
+
+.price-gradation:hover,
+.type-gradation:hover,
+.rating-gradation:hover {
+    color: #81b3d2;
+}
+
+.price-gradation:active,
+.type-gradation:active,
+.rating-gradation:active {
+    color: #000000;
+}
+
+
+
+/* Стилизация поиска после Найдено  */
+
+.style-results {
+    color: #000000;
+    cursor: pointer;
+}
+
+.style-results:hover {
+    color: #81b3d2;
+}
+
+.style-results:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.up-icon {
+    background: url(../img/up-icon.svg) transparent no-repeat;
+    border: none;
+    width: 11px;
+    height: 10px;
+}
+
+.up-icon:hover {
+    background: url(../img/up-icon-hover.svg) transparent no-repeat;
+}
+
+.up-icon:active {
+    background: url(../img/up-icon-active.svg) transparent no-repeat;
+}
+
+.down-icon {
+    background: url(../img/down-icon.svg) transparent no-repeat;
+    border: none;
+    width: 11px;
+    height: 10px;
+}
+
+.down-icon:hover {
+    background: url(../img/down-icon-hover.svg) transparent no-repeat;
+}
+
+.down-icon:active {
+    background: url(../img/down-icon-active.svg) transparent no-repeat;
 }

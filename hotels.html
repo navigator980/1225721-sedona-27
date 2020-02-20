@@ -27,15 +27,15 @@
     <div class="infrastructure-filter">
       <h3>Инфраструктура:</h3> 
       <input id="pool" type="checkbox" name="pool" checked>
-      <label for="pool">
+      <label class="filter-cursor" for="pool">
         Бассейн
       </label>
       <input id="parking" type="checkbox" name="parking">
-      <label for="parking">
+      <label class="filter-cursor" for="parking">
         Парковка
       </label>
       <input id="wi-fi" type="checkbox" name="wi-fi">
-      <label for="wi-fi">
+      <label class="filter-cursor" for="wi-fi">
         Wi-fi
       </label>
     </div>
@@ -43,31 +43,31 @@
     <div class="property-filter">
       <h3>Тип жилья:</h3>
       <input id="hotel" type="checkbox" name="hotel" checked>
-      <label for="hotel">
+      <label class="filter-cursor" for="hotel">
         Гостинница
       </label>
       <input id="motel" type="checkbox" name="motel" checked>
-      <label for="motel">
+      <label class="filter-cursor" for="motel">
         Мотель
       </label>
       <input id="apartment" type="checkbox" name="apartment" checked>
-      <label  for="apartment">
+      <label class="filter-cursor" for="apartment">
         Апартаменты
       </label>
     </div>
 <!-- Задаю будущий класс фильтру по цене price-filter-->
     <div class="price-filter">
-      <h3>
+      <h3 class="filter-cursor">
         Стоимость в сутки (р):
       </h3>
       <div class="price-range">
         <label class="min-price">
          От  
-        <input type="text" name="min-price" value="0">
+        <input class="filter-cursor" type="text" name="min-price" value="0">
         </label>
         <label class="max-price">
          До
-        <input type="text" name="max-price" value="ДО 3000">
+        <input class="filter-cursor" type="text" name="max-price" value="ДО 3000">
         </label>
       </div>
 <!-- Задаю класс ползунку (range), дальше когда буду дорабатывать фильтр ( попробую по крайней мере ) ,
@@ -77,7 +77,7 @@
         <span class="minimal-range"></span>
         <span class="maximum-range"></span>
       </div>
-      <input type="submit" value="ПОКАЗАТЬ">
+      <input class="filter-cursor" type="submit" value="ПОКАЗАТЬ">
     </div>
   </form>
 </section>
@@ -148,7 +148,8 @@
           </section>
     </main>
     <footer>      
-      <span class="slogan">#visitsedona</span>
+      <span class="slogan">#visitsedona</span><br>
+      <span class="contact-number">Тел: +7(495) 666-02-66</span>
       <ul class="social-buttons">
         <li>
           <a class="social-button-tw" href="https://twitter.com/">

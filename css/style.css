@@ -100,7 +100,7 @@ a {
     width: 568px;
     height: 86px;
     border: none;
-    
+    cursor: pointer;
 }
 
 .search-button:hover {
@@ -140,6 +140,7 @@ a {
     padding-bottom: 16px;
     width: 458px;
     height: 58px;
+    cursor: pointer;
 }
 
 .submit-search:hover {
@@ -153,6 +154,7 @@ a {
 /* Стилизация формы заезда выезда */
 .style-date {
     background-color: #f2f2f2;
+    cursor: pointer;
 }
 
 .style-date:hover {
@@ -169,6 +171,7 @@ a {
     width: 5px;
     height: 13px;
     border: none;
+    cursor: pointer;
 }
 
 .button-minus:hover {
@@ -184,6 +187,7 @@ a {
     width: 5px;
     height: 22px;
     border: none;
+    cursor: pointer;
 }
 
 .button-plus:hover {
@@ -202,6 +206,7 @@ a {
     background: url(../img/calendar.svg) transparent no-repeat;
     position: absolute;
     border: none;
+    cursor: pointer;
 }
 
 .calendar-button:hover {
@@ -217,6 +222,13 @@ a {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    cursor: pointer;
+}
+
+.contact-number {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 /* Кнопка логотипа */
@@ -226,6 +238,7 @@ a {
     height: 41px;
     background: url(../img/logo-htmlacademy.svg) transparent no-repeat;
     border: none;
+    cursor: pointer;
 }
 
 .copyright-logo:hover {
@@ -247,6 +260,7 @@ a {
     border: none;
     width: 46px;
     height: 48px;
+    cursor: pointer;
 }
 
 .button-tw:hover {
@@ -262,6 +276,7 @@ a {
     border: none;
     width: 46px;
     height: 48px;
+    cursor: pointer;
 }
 
 .button-fb:hover {
@@ -277,6 +292,7 @@ a {
     border: none;
     width: 46px;
     height: 48px;
+    cursor: pointer;
 }
 
 .button-yt:hover {
@@ -301,6 +317,15 @@ a {
     color: #766357;
 }
 
+/* Фильтр страницы гостиницы */
+
+.filter-cursor {
+    cursor: pointer;
+}
+
+
+
+/* Стилизация результатов */
 .results a {
     text-decoration: none;
 }
@@ -371,15 +396,8 @@ a {
 }
 
 /* Стилизация фильтров ( Найдено ) */
-/*
-<a class="price-gradation" href="#">По цене</a>
-<a class="type-gradation" href="#">По типу</a>
-<a class="rating-gradation" href="#">По рейтингу</a>
-*/
-
 .gradation {
     font-size: 12px;
-
 }
 
 .price-gradation {
@@ -436,6 +454,7 @@ a {
     border: none;
     width: 11px;
     height: 10px;
+    cursor: pointer;
 }
 
 .up-icon:hover {
@@ -451,6 +470,7 @@ a {
     border: none;
     width: 11px;
     height: 10px;
+    cursor: pointer;
 }
 
 .down-icon:hover {
@@ -460,3 +480,4 @@ a {
 .down-icon:active {
     background: url(../img/down-icon-active.svg) transparent no-repeat;
 }
+

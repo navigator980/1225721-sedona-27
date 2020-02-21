@@ -166,55 +166,30 @@ a {
 }
 /* Кнопки плюсов и минусов в секции формы  */
 
-.button-minus {
-    background: url(../img/minus-button.svg) transparent no-repeat;
-    width: 5px;
-    height: 13px;
-    border: none;
-    cursor: pointer;
-}
 
-.button-minus:hover {
-    background: url(../img/minus-button-hover.svg) transparent no-repeat;
-}
-
-.button-minus:active {
-    background: url(../img/minus-button-active.svg) transparent no-repeat;
-}
-
-.button-plus {
-    background: url(../img/plus-button.svg) transparent no-repeat;
-    width: 5px;
-    height: 22px;
-    border: none;
-    cursor: pointer;
-}
-
-.button-plus:hover {
-    background: url(../img/plus-button-hover.svg) transparent no-repeat;
-}
-
-.button-plus:active {
-    background: url(../img/plus-button-active.svg) transparent no-repeat;
-}
 
 /* Кнопки календаря */
 
 .calendar-button {
     width: 21px;
     height: 22px;
-    background: url(../img/calendar.svg) transparent no-repeat;
     position: absolute;
     border: none;
     cursor: pointer;
+    outline: none;
+    background: transparent;
 }
 
-.calendar-button:hover {
-    background: url(../img/calendar-hover.svg) transparent no-repeat;
+.calendar-button svg {
+    fill: #cacaca;
 }
 
-.calendar-button:active { 
-    background: url(../img/calendar-active.svg) transparent no-repeat;
+.calendar-button:hover svg {
+    fill: black;
+}
+
+.calendar-button:active svg { 
+    fill: #81b3d2;
 }
 
 /* Футер */
@@ -236,17 +211,18 @@ a {
 .copyright-logo {
     width: 115px;
     height: 41px;
-    background: url(../img/logo-htmlacademy.svg) transparent no-repeat;
     border: none;
     cursor: pointer;
+    background: transparent;
+    position: absolute;
 }
 
-.copyright-logo:hover {
-    background: url(../img/logo-htmlacademy-hover.svg) transparent no-repeat;
+.copyright-logo:hover svg {
+    fill: #81b3d2;
 }
 
-.copyright-logo:active {
-    background: url(../img/logo-htmlacademy-active.svg) transparent no-repeat;
+.copyright-logo:active svg {
+    fill: #bdbbbc;
 }
 
 /* Сошал кнопки  */
@@ -255,52 +231,66 @@ a {
     list-style:none;
 }
 
-.button-tw {
-    background: url(../img/button-tw.svg) transparent no-repeat;
+.social-button-tw {
+    width: 46px;
+    height: 48px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+.button-tw svg {
+    fill: #81b3d2;
+}
+
+.button-tw:hover svg {
+    fill: #669ec0;
+}
+
+.button-tw:active svg {
+    fill: #5496bd;
+}
+
+.social-button-fb {
     border: none;
     width: 46px;
     height: 48px;
     cursor: pointer;
+    outline: none;
+    background: transparent;
 }
 
-.button-tw:hover {
-    background: url(../img/button-tw-hover.svg) transparent no-repeat;
+.social-button-fb svg {
+    fill: #81b3d2;
 }
 
-.button-tw:active {
-    background: url(../img/button-tw-active.svg) transparent no-repeat;
+.social-button-fb:hover svg {
+    fill: #669ec0;
 }
 
-.button-fb {
-    background: url(../img/button-fb.svg) transparent no-repeat;
+.social-button-fb:active svg {
+    fill: #5496bd;
+}
+
+.social-button-yt {
     border: none;
     width: 46px;
     height: 48px;
     cursor: pointer;
+    outline: none;
+    background: transparent;
 }
 
-.button-fb:hover {
-    background: url(../img/button-fb-hover.svg) transparent no-repeat;
+.social-button-yt svg {
+    fill: #81b3d2;
 }
 
-.button-fb:active {
-    background: url(../img/button-fb-active.svg) transparent no-repeat;
+.social-button-yt:hover svg {
+    fill: #669ec0;
 }
 
-.button-yt {
-    background: url(../img/button-yt.svg) transparent no-repeat;
-    border: none;
-    width: 46px;
-    height: 48px;
-    cursor: pointer;
-}
-
-.button-yt:hover {
-    background: url(../img/button-yt-hover.svg) transparent no-repeat;
-}
-
-.button-yt:active {
-    background: url(../img/button-yt-active.svg) transparent no-repeat;
+.social-button-yt:active svg {
+    fill: #5496bd;
 }
 
 /* Активная кнопка на странице отеля */
@@ -450,34 +440,44 @@ a {
 }
 
 .up-icon {
-    background: url(../img/up-icon.svg) transparent no-repeat;
     border: none;
-    width: 11px;
-    height: 10px;
     cursor: pointer;
+    outline: none;
+    background: transparent;
 }
 
-.up-icon:hover {
-    background: url(../img/up-icon-hover.svg) transparent no-repeat;
+.up-icon svg {
+    fill: #cacaca;
 }
 
-.up-icon:active {
-    background: url(../img/up-icon-active.svg) transparent no-repeat;
+.up-icon:hover svg {
+    fill: black;
+}
+
+.up-icon:active svg {
+    fill: #81b3d2;
 }
 
 .down-icon {
-    background: url(../img/down-icon.svg) transparent no-repeat;
     border: none;
-    width: 11px;
-    height: 10px;
     cursor: pointer;
+    outline: none;
+    background: transparent;
 }
 
-.down-icon:hover {
-    background: url(../img/down-icon-hover.svg) transparent no-repeat;
+.down-icon svg {
+    fill: #cacaca;
 }
 
-.down-icon:active {
-    background: url(../img/down-icon-active.svg) transparent no-repeat;
+.down-icon:hover svg {
+    fill: black;
 }
+
+.down-icon:active svg {
+    fill: #81b3d2;
+}
+
+
+
+
 

@@ -231,66 +231,42 @@ a {
     list-style:none;
 }
 
-.social-button-tw {
-    width: 46px;
-    height: 48px;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
-}
-
-.button-tw svg {
-    fill: #81b3d2;
-}
-
-.button-tw:hover svg {
-    fill: #669ec0;
-}
-
-.button-tw:active svg {
-    fill: #5496bd;
-}
-
-.social-button-fb {
-    border: none;
-    width: 46px;
-    height: 48px;
-    cursor: pointer;
-    outline: none;
-    background: transparent;
-}
-
-.social-button-fb svg {
-    fill: #81b3d2;
-}
-
-.social-button-fb:hover svg {
-    fill: #669ec0;
-}
-
-.social-button-fb:active svg {
-    fill: #5496bd;
-}
-
+.social-button-tw, 
+.social-button-fb,
 .social-button-yt {
-    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 46px;
     height: 48px;
+    display: inline-flex;
     cursor: pointer;
     outline: none;
-    background: transparent;
+    background-color: #81b3d2;
 }
 
-.social-button-yt svg {
-    fill: #81b3d2;
+.social-button-tw svg, 
+.social-button-fb svg,
+.social-button-yt svg { 
+    fill: #ffffff;
 }
 
-.social-button-yt:hover svg {
-    fill: #669ec0;
+.social-button-tw:hover, 
+.social-button-fb:hover,
+.social-button-yt:hover {
+    background-color: #669ec0;
 }
 
+.social-button-tw:active, 
+.social-button-fb:active,
+.social-button-yt:active  {
+    background-color: #5496bd;
+}
+
+.social-button-tw:active svg, 
+.social-button-fb:active svg,
 .social-button-yt:active svg {
-    fill: #5496bd;
+    fill: #88b6d1;
 }
 
 /* Активная кнопка на странице отеля */

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-  
+    
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -9,6 +9,7 @@ body {
     color: black;
     text-transform: uppercase;
     background-color: white;
+    text-align: center;
   }
 
 a {
@@ -23,8 +24,21 @@ a {
     color: black;
     font-weight: bold;
     background-color: white;
+    text-align: center;
 }
 
+.main-navigation li {
+    width: 240px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+
+.main-logo {
+    position: absolute;
+    width: 140px;
+    
+}
 .main-navigation,
 .site-navigation {
     list-style: none;
@@ -66,25 +80,66 @@ a {
     list-style:none;
 }
 
+.features-list,
+.features-item {
+    width: 1200px;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .features-item h3 {
     font-size: 21px;
     line-height: 21px; 
 }
 
-.features-list,
-.features-item {
-    text-align: center;
-}
-
 .features-item-text {
     background-color: #81b3d2;
+    color: white;
+    width: 400px;
+    height: 256px;
+    box-sizing: border-box;
+    padding-top: 23px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 64px;
 }
+
+.features-item-title {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
 
 .features-item-text h3 {
     font-size: 21px;
     font-weight: 700;
     line-height: 21px;
 }
+
+.features-item li {
+    padding-top: 62px;
+    padding-bottom: 43px;
+    padding-left: 49px;
+    padding-right: 49px;
+    
+}
+
+.features-items li {
+    width: 1200px;
+    display: flex;
+
+    box-sizing: border-box;
+}
+
+.features-list3 ul{
+    list-style: none;
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+
+
 
 /* Секция формы */
 .search-block {
@@ -112,14 +167,14 @@ a {
 }
 
 .search-text-main, h2 {
-    text-align: center;
+    
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
 }
 
 .search-text {
-    text-align: center;
+    
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -453,7 +508,9 @@ a {
     fill: #81b3d2;
 }
 
+/* Сеточная модель сайта */
 
+/* Меню сайта */
 
 
 

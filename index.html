@@ -10,13 +10,15 @@
     <!-- Навигация сайта -->
     <header class="main-header">
       <nav class="main-navigation">
+        <p class="main-logo">
         <a href="index.html">
-          <img class="main-logo" src="img/logo.png" width="135" height="70" alt="Логотип Sedona">          
+          <img  src="img/logo.png" width="135" height="70" alt="Логотип Sedona">            
+        </p>
         </a>
         <ul class="site-navigation">
           <li><a class="active-page-info" href="index.html">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта Штата</a></li>
+          <li class="site-navigation-left"><a href="#">Карта Штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
           </div>
         </ul>
@@ -26,7 +28,7 @@
     <main class="main-class">
       <section class="hero">
         <img src="img/background-photo.jpg" width="1200" height="773" alt="Задний фон">   
-          <h1>Седона- небольшой городок в аризоне, заслуживающий большего!</h1>
+          <h1 class="features-info">Седона- небольшой городок в аризоне, заслуживающий большего!</h1>
             <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>        
       </section>
         <section class="features-list">
@@ -88,7 +90,7 @@
       <section class="search-block">
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2 class="search-text-main">Заинтересовались?</h2>
-            <p class="search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>              
+            <p class="search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>   
         <div>
           <label for="entry-date">Дата заезда:</label>
             <input class="style-date" id="entry-date" type="text" name="entry-date" placeholder="24 апреля 2017" required>  
@@ -136,9 +138,11 @@
         </div>
       </section>
     </main>
-    <footer>      
-      <span class="slogan">#visitsedona</span><br>
-      <span class="contact-number">Тел: +7(495) 666-02-66</span>
+    <footer class="footer-info">  
+      <p class="main-information">
+        <span>#visitsedona</span>
+        <span>Тел: +7(495) 666-02-66</span>        
+      </p>    
       <ul class="social-buttons">
         <li>
           <a class="social-button-tw" href="https://twitter.com/">
@@ -163,7 +167,7 @@
           </a>        
         </li>
       </ul>
-      <p>website by
+      <p class="copyright-info">website by
       <a class="copyright" href="https://htmlacademy.ru/">
       <button class="copyright-logo" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 113 39">

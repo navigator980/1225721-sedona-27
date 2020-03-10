@@ -14,7 +14,7 @@
           <a href="index.html">
             <img  src="img/logo.png" width="135" height="70" alt="Логотип Sedona">            
           </p>          
-        </a>
+          </a>
         <ul class="site-navigation">
           <li><a href="index.html">Информация</a></li>
           <li><a href="#">Фото и Видео</a></li>
@@ -24,141 +24,145 @@
       </nav>  
     </header>
 <!--Общий класс фильтрам filters где будут вложены все остальные фильтры в блоке-->
-<section class="filters">
-  <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-    <div class="infrastructure-filter">
-      <h3>Инфраструктура:</h3> 
-      <input id="pool" type="checkbox" name="pool" checked>
-      <label class="filter-cursor" for="pool">
-        Бассейн
-      </label>
-      <input id="parking" type="checkbox" name="parking">
-      <label class="filter-cursor" for="parking">
-        Парковка
-      </label>
-      <input id="wi-fi" type="checkbox" name="wi-fi">
-      <label class="filter-cursor" for="wi-fi">
-        Wi-fi
-      </label>
-    </div>
+    <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+      <div class="infrastructure-filter">
+        <h3>Инфраструктура:</h3> 
+          <input id="pool" type="checkbox" name="pool" checked>
+        <label class="filter-cursor" for="pool">
+          Бассейн
+        </label>
+          <input id="parking" type="checkbox" name="parking">
+        <label class="filter-cursor" for="parking">
+          Парковка
+        </label>
+          <input id="wi-fi" type="checkbox" name="wi-fi">
+        <label class="filter-cursor" for="wi-fi">
+          Wi-fi
+        </label>
+      </div>
 <!-- Задал название классна Property-filter для фильтра для колонки типа жилья-->
     <div class="property-filter">
       <h3>Тип жилья:</h3>
-      <input id="hotel" type="checkbox" name="hotel" checked>
+        <input id="hotel" type="checkbox" name="hotel" checked>
       <label class="filter-cursor" for="hotel">
         Гостинница
       </label>
-      <input id="motel" type="checkbox" name="motel" checked>
+        <input id="motel" type="checkbox" name="motel" checked>
       <label class="filter-cursor" for="motel">
         Мотель
       </label>
-      <input id="apartment" type="checkbox" name="apartment" checked>
+        <input id="apartment" type="checkbox" name="apartment" checked>
       <label class="filter-cursor" for="apartment">
         Апартаменты
       </label>
-    </div>
+      </div>
 <!-- Задаю будущий класс фильтру по цене price-filter-->
-    <div class="price-filter">
-      <h3 class="filter-cursor">
-        Стоимость в сутки (р):
-      </h3>
-      <div class="price-range">
+      <div class="price-filter">
+        <h3 class="filter-cursor">
+          Стоимость в сутки (р):
+        </h3>
+        <div class="price-range">
         <label class="min-price">
-         От  
-        <input class="filter-cursor" type="text" name="min-price" value="0">
+          От  
+          <input class="filter-cursor" type="text" name="min-price" value="0">
         </label>
         <label class="max-price">
-         До
-        <input class="filter-cursor" type="text" name="max-price" value="ДО 3000">
+           До
+          <input class="filter-cursor" type="text" name="max-price" value="ДО 3000">
         </label>
       </div>
 <!-- Задаю класс ползунку (range), дальше когда буду дорабатывать фильтр ( попробую по крайней мере ) ,
    я пооробую сделать так, чтобы всё двигалось как надо и был показан весь допустимый диапозон-->
       <div class="range">
         <div class="bar"></div>
-        <span class="minimal-range"></span>
-        <span class="maximum-range"></span>
-      </div>
+          <span class="minimal-range"></span>
+          <span class="maximum-range"></span>
+        </div>
       <input class="filter-cursor" type="submit" value="ПОКАЗАТЬ">
-    </div>
-  </form>
-</section>
+      </div>
+    </form>
 <!-- добавляю доп секцию под результаты results-->
-<section class="results">
-  <div class="result-gradation">
-    <h3>Найдено: 3</h3>
-  </div>
-  <div class="gradation">
-    <span class="gradation-list">Сортировка:</span>
-    <a class="price-gradation" href="#">По цене</a>
-    <a class="type-gradation" href="#">По типу</a>
-    <a class="rating-gradation" href="#">По рейтингу</a>
-    <button class="up-icon" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-        <path d="M5.5 0L0 10h11z"/>
-      </svg>
-    </button>
-    <button class="down-icon" type="button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-        <path d="M5.5 10L0 0h11"/>
-      </svg>
-    </button>
-  </div>
-</section>
-        <section class="results">
-          <article>
-        <h3 class="style-results">Amara Resort & Spa</h3>
-        <img src="img/amara_resot_and_spa.png" width="135" height="90" alt="Фото отеля">
-        <p>
+        <section class="results-filter">
+          <div class="result-gradation">
+            <h3>Найдено: 3</h3>
+        </div>
+        <div class="gradation">
+          <span class="gradation-list">Сортировка:</span>
+            <a class="price-gradation" href="#">По цене</a>
+            <a class="type-gradation" href="#">По типу</a>
+            <a class="rating-gradation" href="#">По рейтингу</a>
+          <button class="up-icon" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 0L0 10h11z"/>
+            </svg>
+          </button>
+          <button class="down-icon" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
+          </div>
+        </section>
+        <section class="hotels">
+          <article class="hotel-list">
+            <img src="img/amara_resot_and_spa.png" width="135" height="90" alt="Фото отеля">
+              <h3 class="style-results">Amara Resort & Spa</h3>
+          <p class="hotel-info">
             <a class="learn-more" href="#">Подробнее</a>
             <a class="reserved" href="#">Забронировать</a>
             <span>Гостинница</span>
             <span>От 4000 р.</span>
+          </p>
+        <p class="hotel-rating">
+          <span>
+            <img src="img/star.svg" alt="4 звезды">
+            <img src="img/star.svg" alt="4 звезды">
+            <img src="img/star.svg" alt="4 звезды">
+            <img src="img/star.svg" alt="4 звезды">
+          </span>
+        <span class="rating">Рейтинг: 8,5</span>          
         </p>
-        <span>
-        <img src="img/star.svg" alt="4 звезды">
-        <img src="img/star.svg" alt="4 звезды">
-        <img src="img/star.svg" alt="4 звезды">
-        <img src="img/star.svg" alt="4 звезды">
-        </span>
-        <span class="rating">Рейтинг: 8,5</span>
-          </article>
-            <article>
-            <h3 class="style-results">Desert Quail Inn</h3>
-            <img src="img/desert_quail_inn.png" width="135" height="90" alt="Фото мотеля">
-            <p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <a class="reserved" href="#">Забронировать</a>
-                <span>Мотель</span> 
-                <span>От 3000 р.</span>
+        </article>
+        <article class="hotel-list">
+          <img src="img/desert_quail_inn.png" width="135" height="90" alt="Фото мотеля">
+          <h3 class="style-results">Desert Quail Inn</h3>
+            <p class="hotel-info">
+              <a class="learn-more" href="#">Подробнее</a>
+              <a class="reserved" href="#">Забронировать</a>
+              <span>Мотель</span> 
+              <span>От 3000 р.</span>
             </p>
+            <p class="hotel-rating">
             <span>
               <img src="img/star.svg" alt="3 звезды">
               <img src="img/star.svg" alt="3 звезды">
-              <img src="img/star.svg" alt="3 звезды">
+              <img src="img/star.svg" alt="3 звезды"> 
             </span>
-            <span class="rating">Рейтинг: 8,9</span>
+            <span class="rating">Рейтинг: 8,9</span>              
+            </p>
             </article>
-            <article>
+            <article  class="hotel-list">
+              <img src="img/villas_at_poco_diablo.png" width="135" height="90" alt="Фото апартаментов">
                 <h3 class="style-results">Villas At Poco Diablo</h3>
-                <img src="img/villas_at_poco_diablo.png" width="135" height="90" alt="Фото апартаментов">
-                <p>
-                    <a class="learn-more" href="#">Подробнее</a>
-                    <a class="reserved" href="#">Забронировать</a>
-                    <span>Апартаменты</span> 
-                    <span>От 2000 р.</span>
+                <p class="hotel-info">
+                  <a class="learn-more" href="#">Подробнее</a>
+                  <a class="reserved" href="#">Забронировать</a>
+                  <span>Апартаменты</span> 
+                  <span>От 2000 р.</span>
                 </p>
+                <p class="hotel-rating">
                 <span>
                   <img src="img/star.svg" alt="2 звезды">
                   <img src="img/star.svg" alt="2 звезды">
-                </span>
-                <span class="rating">Рейтинг: 9,2</span>                            
+                </span>      
+                <span class="rating">Рейтинг: 9,2</span>                   
+                </p>
             </article>           
           </section>
     </main>
-    <footer>  
+    <footer class="footer-info">  
       <p class="main-information">
-        <span>#visitsedona</span><br>
+        <span>#visitsedona</span>
         <span>Тел: +7(495) 666-02-66</span>        
       </p>    
       <ul class="social-buttons">
@@ -185,7 +189,7 @@
           </a>        
         </li>
       </ul>
-      <p>website by
+      <p class="copyright-info">website by
       <a class="copyright" href="https://htmlacademy.ru/">
       <button class="copyright-logo" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 113 39">

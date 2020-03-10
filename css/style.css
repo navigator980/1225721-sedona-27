@@ -13,6 +13,10 @@ body {
     width: 1200px;
   }
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -31,7 +35,7 @@ a {
 .main-navigation li {
     width: 240px;
     padding: 15px 20px;
-    box-sizing: border-box;
+    
 }
 
 
@@ -97,7 +101,7 @@ a {
     width: 1200px;
     padding-left: 380px;
     padding-right: 380px;
-    box-sizing: border-box;
+    
     margin-top: 59px;
 }
 
@@ -130,7 +134,7 @@ a {
     color: white;
     width: 400px;
     height: 256px;
-    box-sizing: border-box;
+    
     padding-top: 23px;
     padding-left: 60px;
     padding-right: 60px;
@@ -161,13 +165,13 @@ a {
     width: 1200px;
     display: flex;
 
-    box-sizing: border-box;
+    
 }
 
 .features-list3 ul{
     list-style: none;
     background-color: #eeeeee;
-    box-sizing: border-box;
+    
     margin: 0;
 }
 
@@ -201,7 +205,7 @@ a {
 .search-text-block {
     width: 1200px;
     text-align: center;
-    box-sizing: border-box;
+    
     padding-right: 400px;
     padding-left: 400px;
 }
@@ -291,28 +295,31 @@ a {
 /* Футер */
 .footer-info {
     width: 1200px;
-    height: 120px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
-    box-sizing: border-box;
-
-
+    
+    align-items: center;
 }
 
 .main-information {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    box-sizing: border-box;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
 }
 
 .copyright-info {
     display: flex;
     padding-top: 30px;
-    
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    padding-top: 10px;
 }
 
 /* Кнопка логотипа */
@@ -341,7 +348,8 @@ a {
     margin: 0;
     display: flex;
     padding-top: 36px;
-    box-sizing: border-box;
+    
+    padding: 0;
 }
 
 .social-button-tw {
@@ -410,26 +418,79 @@ a {
     cursor: pointer;
 }
 
-.filters {
+.filter {
     display: flex;
-    justify-content: space-between;
 }
 
+.price-filter {
+    margin-left: auto;
+    padding-right: 74px
+}
+
+.infrastructure-filter {
+    display: flex;
+    flex-direction: column;
+    padding-right: 115px;
+    padding-left: 70px;
+}
+
+.property-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-filter {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.gradation {
+    padding-top: 31px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.result-gradation {
+    font-size: 21px;
+    line-height: 26px;
+    padding-right: 49px;
+    padding-left: 72px;
+    padding-top: 31px;
+}
+
+
 /* Стилизация результатов */
-.results a {
+.hotels {
+    padding-left: 72px;
+}
+
+.hotels a {
     text-decoration: none;
 }
 
-.results h3 {
+.hotels h3 {
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+    width: 300px;
+    height: 20px;
 }
 
-.results span {
+.hotels span {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+}
+
+.hotel-list {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .learn-more,

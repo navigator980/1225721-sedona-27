@@ -443,6 +443,7 @@ a {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e5e5e5;
+    
 }
 
 .gradation {
@@ -477,8 +478,7 @@ a {
     padding: 0;
     margin: 0;
     padding-left: 30px;
-    width: 300px;
-    height: 20px;
+
 }
 
 .hotels span {
@@ -492,6 +492,8 @@ a {
     padding: 30px 0;
     border-bottom: 1px solid #e5e5e5;
 }
+
+
 
 .learn-more,
 .reserved {
@@ -587,16 +589,18 @@ a {
 
 /* Стилизация поиска после Найдено  */
 
-.style-results {
+.hotel-title {
     color: #000000;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 21px;
 }
 
-.style-results:hover {
+.hotel-title:hover {
     color: #81b3d2;
 }
 
-.style-results:active {
+.hotel-title:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -639,3 +643,48 @@ a {
 }
 
 
+.hotel-info {
+    width: 350px;
+    height: 90px;
+    margin: 0;
+}
+
+.hotel-title {
+    display: flex;
+    padding: 0;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    
+}
+
+.hotel-discription {
+    display: flex;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.hotel-discription-right {
+    padding-right: 29px;
+}
+
+.hotel-main-discription {
+    display: table;
+    padding-left: 30px;
+}
+
+.hotel-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 72px;
+    margin-left: 462px;
+    
+
+}
+
+.hotel-main-info {
+    display: inline-block;
+}

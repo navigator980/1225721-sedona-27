@@ -644,6 +644,8 @@ a {
 
 
 .hotel-info {
+    display: flex;
+    flex-direction: column;
     width: 350px;
     height: 90px;
     margin: 0;
@@ -668,7 +670,6 @@ a {
 }
 
 .hotel-main-discription {
-    display: table;
     padding-left: 30px;
 }
 

@@ -442,6 +442,7 @@ a {
 .results-filter {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .gradation {
@@ -462,10 +463,6 @@ a {
 
 /* Стилизация результатов */
 
-.hotels {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-}
 
 .hotels a {
     text-decoration: none;
@@ -650,8 +647,10 @@ a {
 .hotel-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 350px;
     height: 90px;
+    padding-left: 30px;
 }
 
 .hotel-title {
@@ -674,6 +673,7 @@ a {
     min-width:400px;
     min-height: 30px;
     margin: 0;
+    padding-top: 3px;
 
 }
 
@@ -681,7 +681,15 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
     height: 90px;
+    margin-left: auto;
+    margin-right: 72px;
+    
+}
+
+.hotel-border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-main-info {

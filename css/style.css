@@ -295,10 +295,12 @@ a {
 /* Футер */
 .footer-info {
     width: 1200px;
-    padding: 20px 0;
+    padding-left: 132px;
+    padding-right: 101px;
+    padding-top: 36px;
+    padding-bottom: 36px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between; 
     align-items: center;
 }
 
@@ -486,9 +488,11 @@ a {
 
 .hotel-list {
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 72px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 72px;
+    padding-right: 72px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
@@ -684,12 +688,8 @@ a {
     justify-content: space-between;
     height: 90px;
     margin-left: auto;
-    margin-right: 72px;
-    
-}
 
-.hotel-border {
-    border-bottom: 1px solid #e5e5e5;
+    
 }
 
 .hotel-main-info {

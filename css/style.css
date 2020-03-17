@@ -422,6 +422,13 @@ a {
 
 .filter {
     display: flex;
+    background:url(../img/hotel-background.png) center no-repeat;
+    color: #fff;
+    padding: 30px 6% 14px;
+}
+
+.filters input[type="checkbox"] {
+    display: none;
 }
 
 .price-filter {
@@ -429,16 +436,68 @@ a {
     padding-right: 74px
 }
 
-.infrastructure-filter {
+.filter-options {
     display: flex;
     flex-direction: column;
     padding-right: 115px;
-    padding-left: 70px;
+    
+    margin-bottom: 36px;
+    padding-left: 86px;
+    
 }
 
-.property-filter {
-    display: flex;
-    flex-direction: column;
+
+.filter-options label {
+    position: relative;
+    display: block;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+
+  top: 0;
+  left: -30px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+
+  width: 27px;
+  height: 23px;
+  
+  
+  top: 3;
+  left: -30px;
+
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .results-filter {
@@ -695,3 +754,4 @@ a {
 .hotel-main-info {
     display: inline-block;
 }
+

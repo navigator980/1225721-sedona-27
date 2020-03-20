@@ -23,6 +23,16 @@ a {
 
  /* Главная страница сайта */
  /* Навигация сайта */
+
+.background-photo {
+        width: 1200px;
+        height: 773px;
+        background: url(/img/background-mask.png) bottom no-repeat, url(/img/background-welcome.png) top no-repeat, url(/img/background-photo.jpg) center no-repeat;
+}
+
+
+
+
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
@@ -267,7 +277,7 @@ a {
 /* Кнопки плюсов и минусов и секция формы  */
 .search-form {
     width: 568px;
-    height: 395px;
+    min-height: 395px;
     margin: 0 auto;
 }
 
@@ -323,6 +333,14 @@ a {
     margin-left: 53px;
 }
 
+.date-selector {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 30px;
+
+}
+
 .date-selector input {
     width: 346px;
     height: 38px;
@@ -335,25 +353,22 @@ a {
     border: 2px solid #e5e5e5;
 }
 
-.date-selector {
-    margin-bottom: 30px;
-}
-
-
 .input-with-calendar {
     position: relative;
 }
 
-.input-with-calendar button {
+.date-selector button {
     position: absolute;
+    top: 9px;
+    right: 19px;
 }
+
 
 /* Кнопки календаря */
 
 .calendar-button {
     width: 21px;
     height: 22px;
-    position: absolute;
     border: none;
     cursor: pointer;
     outline: none;

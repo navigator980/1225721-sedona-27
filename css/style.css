@@ -266,8 +266,55 @@ a {
 }
 /* Кнопки плюсов и минусов в секции формы  */
 
+.input-with-button {
+    position: relative;
+}
 
+.input-with-button input {
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border: none;
+    background-color: #f2f2f2;
+}
 
+.input-with-button input:hover {
+    background-color: #ebebeb;
+}
+
+.input-with-button input:focus {
+    background-color: #ffffff;
+}
+
+.input-with-button button {
+    width: 38px;
+    height: 38px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #bdbbbc;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.input-with-button button:hover {
+    color: #000000;
+}
+
+.input-with-button button:active {
+    color: #81b3d2;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+
+}
+
+.counter label {
+    padding-right: 41px;
+}
 /* Кнопки календаря */
 
 .calendar-button {
@@ -430,12 +477,6 @@ a {
 .filters input[type="checkbox"] {
     display: none;
 }
-/*
-.price-filter {
-    margin-left: auto;
-    padding-right: 74px
-}
-*/
 
 .filter-options {
     display: flex;
@@ -447,11 +488,6 @@ a {
     
 }
 
-.filter-options h3 {
-    margin-left: -30px;
-}
-
-
 .filter-options label {
     position: relative;
     display: block;
@@ -459,20 +495,9 @@ a {
     padding-left: 13px;
 }
 
-.filter-input-checkbox + label::before {
-  content: "";
-  position: absolute;
 
-  width: 27px;
-  height: 23px;
 
-  top: 0;
-  left: -30px;
-  background-image: url(../img/checkbox-off.svg);
-  background-repeat: no-repeat;
-}
-
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
 
   position: absolute;
@@ -480,14 +505,24 @@ a {
   width: 27px;
   height: 23px;
   
-  
-  top: 3;
   left: -30px;
 
   background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
-  
 }
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+  
+    width: 27px;
+    height: 23px;
+  
+    top: 0;
+    left: -30px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
+  }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -767,7 +802,7 @@ input[type="radio"].visually-hidden {
 
 .filter-range {
     width: 330px;
-    margin-top: 31px;
+    margin-top: 18px;
     margin-right: 74px;
     margin-bottom: 35px;
     margin-left: auto;
@@ -775,7 +810,8 @@ input[type="radio"].visually-hidden {
 
 .filter-range-title {
     margin-bottom: 13px;
-    font-size: 700;
+    font-size: 16px;
+    font-weight: 700;
     line-height: 21px;
     text-align: left;
 }
@@ -789,13 +825,16 @@ input[type="radio"].visually-hidden {
   
     border: 2px solid #ffffff;
     border-radius: 2px;
+
+    display: flex;
+    align-items: center;
   }
 
 .price-controls label {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
 
   cursor: pointer;
@@ -804,7 +843,7 @@ input[type="radio"].visually-hidden {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 157px;
-  padding-left: 65px;
+  padding-left: 26px;
 }
 
 .price-controls input {
@@ -854,8 +893,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -9px;
 
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
 
   background: #ababab;
   border: 8px solid #ffffff;
@@ -866,6 +905,8 @@ input[type="radio"].visually-hidden {
 
 .range-toggle:hover {
     background: #1c4f80;
+    width: 21px;
+    height: 21px;
   }
 
 .range-toggle-min {

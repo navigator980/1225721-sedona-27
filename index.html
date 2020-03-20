@@ -91,7 +91,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2 class="search-text-main">Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>   
-        <div>
+        <div class="hotel-research-form">
           <label for="entry-date">Дата заезда:</label>
             <input class="style-date" id="entry-date" type="text" name="entry-date" placeholder="24 апреля 2017" required>  
               <button class="calendar-button" type="button">
@@ -100,7 +100,7 @@
               <path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/>
             </svg>
           </button>
-        </div>       
+        </div class="hotel-research-form">       
         <div>
           <label for="exit-date">Дата выезда:</label>
           <input class="style-date" id="exit-date" type="text" name="exit-date" placeholder="4 июля 2017" required>
@@ -113,19 +113,22 @@
         </div>
         <div class="counter">
           <label for="adult">Взрослые:</label>
-        <div class="adult">
-          <button class="button-minus" type="button"></button>
-          <input id="adult" type="text" name="adult" value="2" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
-          <button class="button-plus" type="button"></button>
+            <div class="adult">       
+                <div class="input-with-button">
+                  <button class="button-minus" type="button">-</button> 
+                  <input id="adult" type="text" name="adult" value="2">
+                  <button class="button-plus" type="button">+</button>
+                </div>
         </div>           
         </div>
         <div class="counter">
           <label for="kids">Дети:</label>
         <div class="kids">
-          <button class="button-minus" type="button">
-          </button>
-          <input id="kids" type="text" name="kids" value="0" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
-          <button class="button-plus" type="button"></button>
+          <div class="input-with-button">
+            <button class="button-minus" type="button">-</button>
+            <input id="kids" type="text" name="kids" value="0">
+            <button class="button-plus" type="button">+</button>            
+          </div>
         </div>
         </div>
           <button class="submit-search" type="submit">Найти</button>

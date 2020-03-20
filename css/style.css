@@ -340,6 +340,14 @@ a {
 }
 
 
+.input-with-calendar {
+    position: relative;
+}
+
+.input-with-calendar button {
+    position: absolute;
+}
+
 /* Кнопки календаря */
 
 .calendar-button {

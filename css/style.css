@@ -264,7 +264,13 @@ a {
 .style-date:focus {
     background-color: #ffffff;
 }
-/* Кнопки плюсов и минусов в секции формы  */
+/* Кнопки плюсов и минусов и секция формы  */
+.search-form {
+    width: 568px;
+    height: 395px;
+    margin: 0 auto;
+}
+
 
 .input-with-button {
     position: relative;
@@ -306,7 +312,7 @@ a {
 
 .counter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: space-between;
     align-items: center;
 
@@ -314,7 +320,26 @@ a {
 
 .counter label {
     padding-right: 41px;
+    margin-left: 53px;
 }
+
+.date-selector input {
+    width: 346px;
+    height: 38px;
+    border: none;
+    margin-left: 21px;  
+    padding-left: 15px;
+}
+
+.date-selector input:focus {
+    border: 2px solid #e5e5e5;
+}
+
+.date-selector {
+    margin-bottom: 30px;
+}
+
+
 /* Кнопки календаря */
 
 .calendar-button {

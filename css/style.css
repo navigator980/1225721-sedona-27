@@ -31,7 +31,6 @@ a {
         min-height: 509px;
         background: url(../img/background-mask.png)no-repeat, url(../img/background-welcome.png)no-repeat, url(../img/background-photo.jpg) no-repeat;
         background-position: -1px 451px , 370px 76px , 0px -83px;
-        margin-bottom: 58px;
 }
 
 .main-navigation {
@@ -108,6 +107,8 @@ a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: white;
+    padding-top: 61px;
 }
 
 .main-intro h1 {
@@ -149,6 +150,11 @@ a {
     list-style:none;
 }
 
+.features-list .features-item {
+    width: 1200px;
+    min-height: 328px;
+}
+
 .features-list,
 .features-item {
     display: flex;
@@ -156,6 +162,24 @@ a {
     margin-right:auto;
 }
 
+.features-item .features-item-small-house {
+    background: url(../img/house.svg) center no-repeat;
+}
+
+.features-item .features-item-food {
+    background: url(../img/food.svg) center no-repeat;
+
+}
+
+.features-item .features-item-present {
+    background: url(../img/present.svg) center no-repeat;
+
+}
+
+.features-item {
+    margin: 0;
+    padding: 0;
+}
 
 .features-item h3 {
     font-size: 21px;

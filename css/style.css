@@ -145,6 +145,11 @@ a {
     margin-top: 38px;
     margin-bottom: 56px;
 }
+
+features-list
+features-item
+
+
 */
 .features-list ul {
     list-style:none;
@@ -162,16 +167,16 @@ a {
     margin-right:auto;
 }
 
-.features-item .features-item-small-house {
+.features-item1 .features-item-small-house {
     background: url(../img/house.svg) center no-repeat;
 }
 
-.features-item .features-item-food {
+.features-item1 .features-item-food {
     background: url(../img/food.svg) center no-repeat;
 
 }
 
-.features-item .features-item-present {
+.features-item1 .features-item-present {
     background: url(../img/present.svg) center no-repeat;
 
 }
@@ -209,27 +214,75 @@ a {
     margin-bottom: 24px;
 }
 
-.features-item li {
-    padding-top: 62px;
-    padding-bottom: 43px;
-    padding-left: 49px;
-    padding-right: 49px;
-    
-}
+
 
 .features-items li {
     width: 1200px;
     display: flex;
-
-    
 }
 
-.features-list3 ul{
+.features-list1 {
+    display: flex;
+    width: 1200px;
+    min-height: 328px;    
+}
+
+.features-item1 {
     list-style: none;
-    background-color: #eeeeee;
-    
-    margin: 0;
+    display: flex;
+
+    align-items: center;
 }
+
+.features-item1 ul {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.features-list2 {
+    display: flex;
+    width: 1200px;
+    min-height: 256px;
+    background-color: #eeeeee;    
+
+}
+
+.features-list2 ul{
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.features-item2 {
+    display: flex;
+
+}
+
+.features-item2 li {
+    width: 400px;
+    min-height: 143px;
+    padding-top: 50px;
+    padding-bottom: 63px;
+}
+
+.features-list2 h3 {
+    font-size: 21px;
+    line-height: 21px;
+    display: block;
+    width: 125px;
+    margin: -4px 136px 23px;
+    padding: 0;
+}
+
+.features-item2 p {
+    padding: 3px 65px;
+}
+
+
 
 
 

@@ -28,9 +28,9 @@ a {
  /* Навигация сайта */
 
 .background-photo {
-        min-height: 509px;
-        background: url(../img/background-mask.png)no-repeat, url(../img/background-welcome.png)no-repeat, url(../img/background-photo.jpg) no-repeat;
-        background-position: -1px 451px , 370px 76px , 0px -83px;
+        min-height: 508px;
+        background: url(../img/background-mask.png) no-repeat, url(../img/background-welcome.png) no-repeat, url(../img/background-photo.jpg) no-repeat;
+        background-position: -2px 450px , 370px 76px , 0px -83px;
 }
 
 .main-navigation {
@@ -165,20 +165,56 @@ features-item
     display: flex;
     margin-left:auto;
     margin-right:auto;
+    
+    min-height: 257px;
 }
 
 .features-item1 .features-item-small-house {
-    background: url(../img/house.svg) center no-repeat;
+    margin-top: 58px;
+    margin-right: 35px;
+}
+
+.features-item1 .features-item-house-title {
+    padding-right: 28px;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.features-item1 .features-item-house-text {
+    padding-left: 50px;
+    padding-top: 1px;
 }
 
 .features-item1 .features-item-food {
-    background: url(../img/food.svg) center no-repeat;
+    margin-right: 95px;
+    margin-top: 60px;
+}
 
+.features-item1 .features-item-food-title {
+    padding-right: 87px;
+    padding-top: 2px;
+    padding-left: 6px;
+}
+
+.features-item1 .features-item-food-text {
+    padding-right: 108px;
+    padding-left: 25px;
 }
 
 .features-item1 .features-item-present {
-    background: url(../img/present.svg) center no-repeat;
+    margin-right: 60px;
+    margin-top: 55px;
+}
 
+.features-item1 .features-item-present-title {
+    padding-left: 89px;
+    padding-right: 146px;
+    padding-top: 1px;
+}
+
+.features-item1 .features-item-present-text {
+    padding-right: 65px;
+    padding-left: 3px;;
 }
 
 .features-item {
@@ -231,13 +267,21 @@ features-item
     list-style: none;
     display: flex;
 
-    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.features-item1 h3 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    
 }
 
 .features-item1 ul {
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    width: 400px;
+
+
 }
 
 
@@ -301,6 +345,7 @@ features-item
     height: 86px;
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .search-button:hover {
@@ -350,6 +395,7 @@ features-item
     width: 458px;
     height: 58px;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .submit-search:hover {
@@ -375,9 +421,15 @@ features-item
 }
 /* Кнопки плюсов и минусов и секция формы  */
 .search-form {
+    box-shadow: 0 5px 30px 0 gray;
     width: 568px;
     min-height: 395px;
     margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background-color:white;
 }
 
 

@@ -1,7 +1,6 @@
 body {
     margin: 0 auto;
     padding: 0;
-    
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -11,10 +10,9 @@ body {
     background-color: white;
     text-align: center;
     width: 1200px;
-
     box-shadow: 0 5px 30px 0 gray;
     background-color: #f2f2f2;
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -25,12 +23,13 @@ a {
 }
 
  /* Главная страница сайта */
+
  /* Навигация сайта */
 
 .background-photo {
-        min-height: 508px;
-        background: url(../img/background-mask.png) no-repeat, url(../img/background-welcome.png) no-repeat, url(../img/background-photo.jpg) no-repeat;
-        background-position: -2px 451px , 370px 76px , 0px -83px;
+    min-height: 508px;
+    background: url(../img/background-mask.png) no-repeat, url(../img/background-welcome.png) no-repeat, url(../img/background-photo.jpg) no-repeat;
+    background-position: -2px 451px, 370px 76px, 0px -83px;
 }
 
 .main-navigation {
@@ -45,7 +44,6 @@ a {
 .main-navigation li {
     width: 239px;
     padding: 15px 20px;
-    
 }
 
 .main-logo {
@@ -55,6 +53,7 @@ a {
     right: 0;
     width: 140px;
 }
+
 .main-navigation,
 .site-navigation {
     list-style: none;
@@ -85,6 +84,7 @@ a {
 }
 
 /* Навигация сайта */
+
 .site-navigation a {
     color: #000000;
 }
@@ -140,9 +140,8 @@ a {
 .features-list,
 .features-item {
     display: flex;
-    margin-left:auto;
-    margin-right:auto;
-    
+    margin-left: auto;
+    margin-right: auto;
     min-height: 257px;
 }
 
@@ -162,7 +161,6 @@ a {
     width: 400px;
     height: 256px;
     padding: 53px 54px;
-
 }
 
 .features-item-title {
@@ -213,7 +211,7 @@ a {
     background-color: #eeeeee;    
 }
 
-.features-list2 ul{
+.features-list2 ul {
     list-style: none;
     margin: 0 auto;
     padding-left: 0px;
@@ -249,6 +247,7 @@ a {
 }
 
 /* Секция формы */
+
 .search-block {
     font-weight: 700;
 }
@@ -281,7 +280,7 @@ a {
     padding-left: 400px;
 }
 
-.search-text-main{
+.search-text-main {
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
@@ -324,6 +323,7 @@ a {
 }
 
 /* Стилизация формы заезда выезда */
+
 .style-date {
     background-color: #f2f2f2;
     cursor: pointer;
@@ -336,7 +336,9 @@ a {
 .style-date:focus {
     background-color: #ffffff;
 }
-/* Кнопки плюсов и минусов и секция формы  */
+
+/* Кнопки плюсов и минусов и секция формы */
+
 .search-form {
     box-shadow: 0 5px 30px 0 gray;
     width: 568px;
@@ -346,7 +348,7 @@ a {
     left: 0;
     right: 0;
     padding-top: 53px;
-    background-color:white;
+    background-color: white;
 }
 
 .input-with-button {
@@ -438,7 +440,6 @@ a {
     right: 19px;
 }
 
-
 /* Кнопки календаря */
 
 .calendar-button {
@@ -463,6 +464,7 @@ a {
 }
 
 /* Футер */
+
 .footer-info {
     width: 1200px;
     min-height: 106px;
@@ -525,13 +527,13 @@ a {
 /* Сошал кнопки  */
 
 .social-buttons {
-    list-style:none;
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     padding-top: 36px;
     padding: 0;
-    padding-left: 180px;
+    padding-left: 187px;
 }
 
 .social-button-tw {
@@ -583,7 +585,7 @@ a {
 /* Активная кнопка на странице отеля */
 
 .site-navigation .active-page-hotel:active {
-    color: #766357 ;
+    color: #766357;
 }
 
 /* Страница с отелями */
@@ -628,7 +630,6 @@ a {
     min-height: 0px;
     padding-left: 26px;
     padding-top: 18px;
-    
 }
 
 .filter-options-h3 {
@@ -645,7 +646,6 @@ a {
     padding-bottom: 20px;
     padding-left: 13px;
 }
-
 
 .filter-options2 {
     display: flex;
@@ -844,8 +844,8 @@ input[type="radio"].visually-hidden2 {
 }
 
 .rating {
-    background-color:#f2f2f2;
-    color:#666;
+    background-color: #f2f2f2;
+    color: #666;
     padding-top: 3px;
     padding-right: 13px;
     padding-bottom: 3px;
@@ -853,6 +853,7 @@ input[type="radio"].visually-hidden2 {
 }
 
 /* Стилизация фильтров ( Найдено ) */
+
 .gradation {
     font-size: 12px;
 }
@@ -949,7 +950,6 @@ input[type="radio"].visually-hidden2 {
     fill: #81b3d2;
 }
 
-
 .hotel-info {
     display: flex;
     flex-direction: column;
@@ -978,7 +978,6 @@ input[type="radio"].visually-hidden2 {
     margin: 0;
 }
 
-
 .hotel-discription-right {
     padding-right: 29px;
 }
@@ -987,14 +986,12 @@ input[type="radio"].visually-hidden2 {
     padding-left: 0px;
 }
 
-
 .hotel-main-discription {
     display: flex;
     min-width:400px;
     min-height: 30px;
     margin: 0;
     padding-top: 3px;
-
 }
 
 .discription {
@@ -1014,7 +1011,7 @@ input[type="radio"].visually-hidden2 {
     display: inline-block;
 }
 
-/* Фильтр  */
+/* Фильтр */
 
 .filter-range {
     width: 316px;
@@ -1040,7 +1037,7 @@ input[type="radio"].visually-hidden2 {
     border-radius: 2px;
     display: flex;
     align-items: center;
-  }
+}
 
 .price-controls label {
     display: inline-block;
@@ -1159,7 +1156,7 @@ input[type="radio"].visually-hidden2 {
     max-height: 70px;
 }
   
-  .features-item h3 {
+.features-item h3 {
     margin: 0 0 24px 0;
 }
   
@@ -1184,7 +1181,7 @@ input[type="radio"].visually-hidden2 {
     background: #f2f2f2;
 }
 
-  .with-control button {
+.with-control button {
     min-width: 37px;
     height: 39px;
     background: #f2f2f2;
@@ -1202,15 +1199,14 @@ input[type="radio"].visually-hidden2 {
     font-size: 14px;
     font-weight: 700;
 }
-  
-  
+
 .btn {
     position: relative;
 }
   
 .btn:before {
     position: absolute;
-    content: '';
+    content: "";
     width: 12px;
     height: 3px;
     top: 18px;
@@ -1220,7 +1216,7 @@ input[type="radio"].visually-hidden2 {
   
 .btn:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 12px;
     height: 3px;
     top: 18px;

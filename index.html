@@ -25,6 +25,7 @@
       </nav>  
     </header>
     <!-- Основная информация -->
+    
     <main class="main-class">
           <div class="background-photo"></div>
           <div class="main-intro">
@@ -42,25 +43,25 @@
 
 
 
-        <div class="features-list1">
-          <ul class="features-item1">
-            <li>
-              <img class="features-item-small-house" src="img/house.svg" width="75px" heigh="72px" alt="Картинка дома">
-                <h3 class="features-item-house-title">Жильё</h3>
-              <p class="features-item-house-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>               
+ 
+          <ul class="features-items">
+            <li class="features-item">
+              <img class="features-item-small-house" src="img/house.svg" width="75px" height="72px" alt="Картинка дома">
+              <h3 class="features-item-house-title">Жильё</h3>
+              <p class="features-item-house-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li>
-              <img class="features-item-food" src="img/food.svg" width="74px" heigh="70px" alt="Картинка еды">
-                <h3 class="features-item-food-title">Еда</h3>
-              <p class="features-item-food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>                
+            <li class="features-item">
+              <img class="features-item-food" src="img/food.svg" width="74px" height="70px" alt="Картинка еды">
+              <h3 class="features-item-food-title">Еда</h3>
+              <p class="features-item-food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li>
-              <img class="features-item-present" src="img/present.svg" width="64px" heigh="76px" alt="Картинка подарка">
-                <h3 class="features-item-present-title">Сувениры</h3>
-              <p class="features-item-present-text">не только китайского, но и местного производства!</p>                
+            <li class="features-item">
+              <img class="features-item-present" src="img/present.svg" width="64px" height="76px" alt="Картинка подарка">
+              <h3 class="features-item-present-title">Сувениры</h3>
+              <p class="features-item-present-text">не только китайского, но и местного производства!</p>
             </li>
-          </ul>        
-        </div>
+          </ul>       
+
 
 
 
@@ -69,9 +70,9 @@
         <section class="features-list">
           <img src="img/canyon.jpg" width="800" height="256" alt="Фото каньона">
           <div class="features-item-text">
-             <h3 class="features-item-title">Там есть мост дьявола</h3>
+             <h3 class="features-item-title">Там есть <br> мост дьявола</h3>
             <span>— № 2 —</span>
-          <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>            
+          <p class="features-item-paragraph">Да, по нему можно пройти! если конечно вы осмелитесь</p>            
           </div>
         </section>
         <div class="features-list2">
@@ -95,10 +96,10 @@
         </div>
         <div class="discription">
           <h2 class="search-text-main">Заинтересовались?</h2>
-            <p class="search-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>               
+            <p class="search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>               
         </div>
       <!-- Секция формы -->
-      <button id="search" class="search-button" type="button">Поиск гостиницы в Седоне</button>        
+        <button id="search" class="search-button" type="button">Поиск гостиницы в Седоне</button>
       <section class="search-block">
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="date-selector">
@@ -128,18 +129,18 @@
         <div class="counter">
           <label for="adult">Взрослые:</label>
         <div class="adult">       
-          <div class="input-with-button">
-            <button class="button-minus" type="button">-</button> 
+          <div class="with-control">
+            <button class="btn btn-minus"></button> 
             <input id="adult" type="text" name="adult" value="2">
-            <button class="button-plus" type="button">+</button>
+            <button class="btn btn-plus"></button>
           </div>
         </div>  
-          <label for="kids">Дети:</label>
+          <label class="counter-label-kids" for="kids">Дети:</label>
         <div class="kids">
-          <div class="input-with-button">
-            <button class="button-minus" type="button">-</button>
+          <div class="with-control">
+            <button class="btn btn-minus"></button>
             <input id="kids" type="text" name="kids" value="0">
-            <button class="button-plus" type="button">+</button>            
+            <button class="btn btn-plus"></button>            
           </div>
         </div>
         </div>
@@ -155,8 +156,8 @@
     </main>
     <footer class="footer-info">  
       <p class="main-information">
-        <span>#visitsedona</span>
-        <span>Тел: +7(495) 666-02-66</span>        
+        <span class="main-information1">#visitsedona</span>
+        <span class="main-information2">Тел: +7(495) 666-02-66</span>        
       </p>    
       <ul class="social-buttons">
         <li>
